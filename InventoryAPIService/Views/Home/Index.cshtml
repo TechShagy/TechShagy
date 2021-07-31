@@ -1,0 +1,97 @@
+﻿<div class="jumbotron">
+    <h1>ShopBridge Inventory</h1>
+    <p class="lead">You can use this API for Adding, Updating, Deleting and Viewing items in Inventory</p>
+
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Below are the Exposed API's:</h2>
+        <h3>1. Post: api/inventory/AddOrUpdateItemInInventory</h3>
+        <p>
+            This API can be used to perform Adding new item or Updating existing itme. You need to pass in Body Parameters.If Need to modify existing item then pass ProductId which need to modify and if need to add new item then just pass the details no ProductID need to provide:
+        </p>
+        <div>
+            <h4 class="sample-header">application/json, text/json</h4>
+            <div class="sample-content">
+                <span><b>Sample:</b></span>
+                <pre class="wrapped">{
+                  "ProductId": 1,
+                  "ProductName": "sample string 2",
+                  "ProductDesc": "sample string 3",
+                  "ProductPrice": 4,
+                  "ProductManufacturer": "sample string 5",
+                  "ProductModifiedDt": "2021-07-30T16:26:02.5689515+05:30"
+                }
+                </pre>
+            </div>
+        </div>
+        <h4>Response Formats: string</h4>
+        <div>
+            <h4 class="sample-header">"Inventory Updated Successfully!" Or "Inventory Added Successfully!"</h4>
+        </div>
+        <h3>2. Get: api/inventory/DeleteItemInInventory?ProductId={ProductIdToDelete}</h3>
+        <p>
+            This API can be used to delete item from Inventory.You need to pass Product Id as Query Parameters:
+        </p>
+        <div>
+
+            <div class="sample-content">
+                <span><b>Sample:</b></span>
+                <pre class="wrapped">api/inventory/DeleteItemInInventory?ProductId=1
+                </pre>
+            </div>
+            <h4>Response Formats: string</h4>
+            <div>
+                <h4 class="sample-header">"Inventory item has successfully Deleted!"</h4>
+            </div>
+        </div>
+        <h3>3. Get: api/inventory/GetAllItemInInventory</h3>
+        <p>
+            This API can be used to get all items from Inventory:
+        </p>
+        <div>
+
+            <div class="sample-content">
+                <span><b>Sample:</b></span>
+                <pre class="wrapped">api/inventory/GetAllItemInInventory
+                </pre>
+            </div>
+            <h3>Response Formats</h3>
+            <div>
+                <h4 class="sample-header">application/json, text/json</h4>
+                <div class="sample-content">
+                    <span><b>Sample:</b></span>
+                    <pre class="wrapped">[
+                      {
+                        "ProductId": 1,
+                        "ProductName": "sample string 2",
+                        "ProductDesc": "sample string 3",
+                        "ProductPrice": 4,
+                        "ProductManufacturer": "sample string 5",
+                        "ProductModifiedDt": "2021-07-30T16:40:15.8065645+05:30"
+                      },
+                      {
+                        "ProductId": 2,
+                        "ProductName": "sample string 2",
+                        "ProductDesc": "sample string 3",
+                        "ProductPrice": 4,
+                        "ProductManufacturer": "sample string 5",
+                        "ProductModifiedDt": "2021-07-30T16:40:15.8065645+05:30"
+                      }
+                    ]
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+        </div>*@
+</div>
