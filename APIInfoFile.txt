@@ -1,0 +1,8 @@
+Hello ,
+
+Please run the Web API and you will find all the API's exposed and the information regarding input parameters and  Response.
+
+ETA:
+ Data Storage Design: 20 min
+API and Service logic:  90 min
+Document and Informative UI in Web API : 20 min
